@@ -36,25 +36,43 @@ import {
     yourlogo,
   } from "../assets";
   
+  import Suspension from '../assets/benefits/suspension.png'
+  import Brake from '../assets/benefits/brake-disc.png';
+  import AC from '../assets/benefits/ac.png';
+  import Oil from '../assets/benefits/oil.png';
+  import CEngine from '../assets/benefits/checkEngine.png';
+  import Tune from '../assets/benefits/tune_up.png';
+  import Engine from '../assets/benefits/engine.png';
+  import Transmision from '../assets/benefits/transmision.png';
+  import Gauge from '../assets/benefits/gauge.png';
+
+  import Review1 from '../assets/benefits/SJ-reviewIcon2.png';
+  import Review2 from '../assets/benefits/SJ-reviewIcon3.png';
+  import Review3 from '../assets/benefits/SJ-reviewIcon4.png';
+  import Rating from '../assets/benefits/rating.png';
+  
+
+
+  
   export const navigation = [
     {
       id: "0",
-      title: "Features",
+      title: "Services",
       url: "#features",
     },
     {
       id: "1",
-      title: "Pricing",
+      title: "Promotions",
       url: "#pricing",
     },
     {
       id: "2",
-      title: "How to use",
+      title: "About Us",
       url: "#how-to-use",
     },
     {
       id: "3",
-      title: "Roadmap",
+      title: "Contact Us",
       url: "#roadmap",
     },
     {
@@ -244,55 +262,112 @@ import {
   export const benefits = [
     {
       id: "0",
-      title: "Ask anything",
+      title: "Break Service",
       text: "Lets users quickly find answers to their questions without having to search through multiple sources.",
       backgroundUrl: "./src/assets/benefits/card-1.svg",
-      iconUrl: benefitIcon1,
+      iconUrl: Brake,
       imageUrl: benefitImage2,
     },
     {
       id: "1",
-      title: "Improve everyday",
+      title: "A/C Service",
       text: "The app uses natural language processing to understand user queries and provide accurate and relevant responses.",
       backgroundUrl: "./src/assets/benefits/card-2.svg",
-      iconUrl: benefitIcon2,
+      iconUrl: AC,
       imageUrl: benefitImage2,
       light: true,
     },
     {
       id: "2",
-      title: "Connect everywhere",
+      title: "Oil Change",
       text: "Connect with the AI chatbot from anywhere, on any device, making it more accessible and convenient.",
       backgroundUrl: "./src/assets/benefits/card-3.svg",
-      iconUrl: benefitIcon3,
+      iconUrl: Oil,
       imageUrl: benefitImage2,
     },
     {
       id: "3",
-      title: "Fast responding",
+      title: "Catalytic & Muffler",
       text: "Lets users quickly find answers to their questions without having to search through multiple sources.",
       backgroundUrl: "./src/assets/benefits/card-4.svg",
-      iconUrl: benefitIcon4,
+      iconUrl: Engine,
       imageUrl: benefitImage2,
       light: true,
     },
     {
       id: "4",
-      title: "Ask anything",
+      title: "Check Engine Light",
       text: "Lets users quickly find answers to their questions without having to search through multiple sources.",
       backgroundUrl: "./src/assets/benefits/card-5.svg",
-      iconUrl: benefitIcon1,
+      iconUrl: CEngine,
       imageUrl: benefitImage2,
     },
     {
       id: "5",
-      title: "Improve everyday",
+      title: "Trasmission & Engine Rebuild",
+      text: "The app uses natural language processing to understand user queries and provide.",
+      backgroundUrl: "./src/assets/benefits/card-6.svg",
+      iconUrl: Transmision,
+      imageUrl: benefitImage2,
+    },
+    {
+      id: "6",
+      title: "Complete Tune-Up",
       text: "The app uses natural language processing to understand user queries and provide accurate and relevant responses.",
       backgroundUrl: "./src/assets/benefits/card-6.svg",
-      iconUrl: benefitIcon2,
+      iconUrl: Tune,
+      imageUrl: benefitImage2,
+    },
+    {
+      id: "7",
+      title: "Shock Suspension Strut",
+      text: "The app uses natural language processing to understand user queries and provide accurate and relevant responses.",
+      backgroundUrl: "./src/assets/benefits/card-6.svg",
+      iconUrl: Suspension,
+      imageUrl: benefitImage2,
+    },
+    {
+      id: "8",
+      title: "Aligment Service",
+      text: "The app uses natural language processing to understand user queries and provide accurate and relevant responses.",
+      backgroundUrl: "./src/assets/benefits/card-6.svg",
+      iconUrl: Gauge,
       imageUrl: benefitImage2,
     },
   ];
+
+  export const reviews = [
+    {
+      id: "0",
+      title: "Terry Gilbertsen",
+      text: "This is my first time at this location. And I really received great service and my vehicle is running better than its bren in a long time.",
+      backgroundUrl: "./src/assets/benefits/card-1.svg",
+      iconUrl: Review1,
+      iconRating: Rating,
+      imageUrl: benefitImage2,
+    },
+    {
+      id: "1",
+      title: "Ismael Soto",
+      text: "Took my car in for the check engine light, they checked it out while I waited. Turns out all I needed was a gas cap! They changed it for me while I waited and the light never came back!",
+      backgroundUrl: "./src/assets/benefits/card-2.svg",
+      iconUrl: Review2,
+      iconRating: Rating,
+      imageUrl: benefitImage2,
+      light: true,
+    },
+    {
+      id: "2",
+      title: "Mia Olmedo",
+      text: "Took my car in for an oil change, Mario was the guy at the front desk and was very nice and not pushy at all, they ended up letting me know I needed a tire rotation because my tires were wearing unevenly, I didn’t even know cars needed a rotation!",
+      backgroundUrl: "./src/assets/benefits/card-3.svg",
+      iconUrl: Review3,
+      iconRating: Rating,
+      imageUrl: benefitImage2,
+    },
+  ];
+
+  
   
   export const socials = [
     {
