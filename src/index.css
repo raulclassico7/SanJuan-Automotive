@@ -85,3 +85,13 @@
 .-rotate-360 {
   @apply rotate-[-360deg];
 }
+
+.clip-path-polygon {
+  clip-path: polygon(
+    0 0,               /* top left */
+    100% 0,            /* top right */
+    100% 95%,          /* bottom right (adjust % to control the depth of the rip) */
+    50% 100%,          /* tip of the rip (adjust % to control the width of the rip) */
+    0 95%              /* bottom left (adjust % to control the depth of the rip) */
+  );
+}
