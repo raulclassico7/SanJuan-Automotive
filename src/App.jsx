@@ -3,6 +3,8 @@ import Header from './components/Header';
 import Banner from './components/Banner';
 import Benefits from './components/Benefits';
 import Footer from './components/Footer';
+import Collaboration from './components/Collaboration';
+import SetAppointment from './components/SetAppointment';
 
 
 const App = () => {
@@ -12,6 +14,8 @@ const App = () => {
        <Header /> 
        <Banner />
        <Benefits />
+       <Collaboration />
+       <SetAppointment />
        <Footer/>
       </div>
       <ButtonGradient />

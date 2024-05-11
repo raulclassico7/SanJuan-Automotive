@@ -151,16 +151,16 @@ import {
   export const collabContent = [
     {
       id: "0",
-      title: "Seamless Integration",
+      title: "1 Year Warranty on all Services",
       text: collabText,
     },
     {
       id: "1",
-      title: "Smart Automation",
+      title: "OEM Parts for all of our services",
     },
     {
       id: "2",
-      title: "Top-notch Security",
+      title: "Top-notch Equipment ",
     },
   ];
   
