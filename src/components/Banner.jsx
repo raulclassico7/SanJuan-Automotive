@@ -45,7 +45,7 @@ const Banner = () => {
                 <img className='h-16 w-auto' src={Phone} alt="Phone" />
                 <h3 className='ml-4 text-lg md:text-[50px]'> (562) 944 - 6353</h3>
             </div>
-            <Button href="/pricing" white className='mt-10 mb-10 text-lg md:text-[17px]'>
+            <Button href="#setAppointment" white className='mt-10 mb-10 text-lg md:text-[17px]'>
               Set your appointment
             </Button>
           </div>

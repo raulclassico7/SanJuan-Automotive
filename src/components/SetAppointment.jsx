@@ -22,7 +22,7 @@ const SetAppointment = () => {
   };
 
   return (
-    <div style={{ backgroundImage: `url(${NewApptBg})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
+    <div id='setAppointment'style={{ backgroundImage: `url(${NewApptBg})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
     <div className='p-15'>
     <div className="max-w-md mx-auto p-8 bg-zinc-100 bg-opacity-75 rounded-lg shadow-lg">
       <h1 className="text-xl font-bold mb-4 text-n-8">Personal Information</h1>

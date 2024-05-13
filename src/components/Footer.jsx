@@ -1,29 +1,38 @@
-import { FaFacebookF, FaTwitter, FaInstagram, FaMapMarkerAlt, FaPhone, FaClock } from 'react-icons/fa';
+import { FaFacebookF, FaTiktok, FaInstagram, FaMapMarkerAlt, FaPhone, FaClock } from 'react-icons/fa';
+import SJLogo from '../assets/SJ-logo.png';
 
 const Footer = () => {
   return (
     <footer className="bg-gray-900 text-white py-10">
       <div className="container mx-auto flex flex-col lg:flex-row items-center justify-between">
-        {/* Left section with logo and social media icons */}
+        <img src={SJLogo} height={200} width={250} alt="Logo" className="mr-4" />
         <div className="flex items-center mb-4 lg:mb-0">
-          <img src="/your-logo.png" alt="Logo" className="h-12 w-auto mr-4" />
           <div className="flex space-x-4">
-            <a href="#" className="text-gray-300 hover:text-white">
+            <a href="https://www.facebook.com/profile.php?id=61558811087907&mibextid=LQQJ4d" className="text-gray-300 hover:text-white">
               <FaFacebookF className="h-6 w-6" />
             </a>
-            <a href="#" className="text-gray-300 hover:text-white">
-              <FaTwitter className="h-6 w-6" />
+            <a href="https://www.tiktok.com/@san.juan.automoti?_t=8mGf6aXtBLK&_r=1" className="text-gray-300 hover:text-white">
+              <FaTiktok className="h-6 w-6" />
             </a>
-            <a href="#" className="text-gray-300 hover:text-white">
+            <a href="https://www.instagram.com/automotive_sanjuan?igsh=MWQ1ZGUxMzBkMA==" className="text-gray-300 hover:text-white">
               <FaInstagram className="h-6 w-6" />
             </a>
           </div>
         </div>
         {/* Right section with address, phone number, and hours of operation */}
         <div className="text-center lg:text-right">
-          <p className="mb-2"><FaMapMarkerAlt className="mr-2" /> 123 Main St, City, State, Zip Code</p>
-          <p className="mb-2"><FaPhone className="mr-2" /> (123) 456-7890</p>
-          <p><FaClock className="mr-2" /> Mon - Fri: 9am - 5pm</p>
+          <div className="flex flex-row justify-start lg:justify-end mb-2">
+            <FaMapMarkerAlt className="mr-2" />
+            <p className="sm:pl-2">123 Main St, City, State, Zip Code</p>
+          </div>
+          <div className="flex flex-row justify-start lg:justify-end mb-2">
+            <FaPhone className="mr-2" />
+            <p className="sm:pl-2">(123) 456-7890</p>
+          </div>
+          <div className="flex flex-row justify-start lg:justify-end">
+            <FaClock className="mr-2" />
+            <p className="sm:pl-2">Mon - Fri: 9am - 5pm</p>
+          </div>
         </div>
       </div>
     </footer>
@@ -31,3 +40,5 @@ const Footer = () => {
 };
 
 export default Footer;
+
+

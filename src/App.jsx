@@ -5,6 +5,7 @@ import Benefits from './components/Benefits';
 import Footer from './components/Footer';
 import Collaboration from './components/Collaboration';
 import SetAppointment from './components/SetAppointment';
+import Reviews from './components/Reviews';
 
 
 const App = () => {
@@ -16,6 +17,7 @@ const App = () => {
        <Benefits />
        <Collaboration />
        <SetAppointment />
+       <Reviews />
        <Footer/>
       </div>
       <ButtonGradient />

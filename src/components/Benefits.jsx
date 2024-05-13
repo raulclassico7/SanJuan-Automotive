@@ -41,7 +41,6 @@ const Benefits = () => {
                     <Arrow />
                   </div>
                 </div>
-                {item.light && <GradientLight />}
                 <div
                   className='absolute inset-0.5 bg-white'
                   style={{ clipPath: "url(#benefits)" }}

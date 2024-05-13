@@ -28,7 +28,7 @@ const Collaboration = () => {
   return (
     <div style={{ position: 'relative' }}>
       <div style={{ backgroundImage: `url(${MechanicBg})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
-        <Section crosses>
+        <Section crosses id='how-to-use'>
           <div className="container lg:flex">
             <div className="max-w-[35rem]" style={{ position: 'relative', zIndex: 1 }}> {/* Set higher zIndex to this div */}
               <h2 className="h2 mb-4 md:mb-8">
