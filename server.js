@@ -3,14 +3,27 @@ import express from 'express'
 const router = express.Router();
 import cors from 'cors'
 import nodemailer from 'nodemailer'
+import path from 'path'
+import { fileURLToPath } from 'url';
 
 const app = express();
 app.use(cors());
 app.use(express.json());
 app.use("/", router);
-app.get('/', (req, res) => {
-    res.send('hello')
-})
+
+// Derive __dirname equivalent
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+// Serve static files from the dist directory
+app.use(express.static(path.join(__dirname, 'dist')));
+
+// Handle client-side routing, return all requests to the React app
+app.get('*', (req, res) => {
+  res.sendFile(path.resolve(__dirname, 'dist', 'index.html'));
+});
+
+
 app.listen(8000, () => console.log('Listening on port 8000'));
 
 const contactEmail = nodemailer.createTransport({
