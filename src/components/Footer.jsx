@@ -23,15 +23,15 @@ const Footer = () => {
         <div className="text-center lg:text-right">
           <div className="flex flex-row justify-start lg:justify-end mb-2">
             <FaMapMarkerAlt className="mr-2" />
-            <p className="sm:pl-2">123 Main St, City, State, Zip Code</p>
+            <p className="sm:pl-2">11823 Valley View Ave, Whittier, CA 90604</p>
           </div>
           <div className="flex flex-row justify-start lg:justify-end mb-2">
             <FaPhone className="mr-2" />
-            <p className="sm:pl-2">(123) 456-7890</p>
+            <p className="sm:pl-2">(562) 944 - 6353</p>
           </div>
           <div className="flex flex-row justify-start lg:justify-end">
             <FaClock className="mr-2" />
-            <p className="sm:pl-2">Mon - Fri: 9am - 5pm</p>
+            <p className="sm:pl-2">Mon - Fri: 8am - 6pm | Sat 8am - 5pm</p>
           </div>
         </div>
       </div>

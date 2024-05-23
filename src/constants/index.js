@@ -57,13 +57,13 @@ import {
   export const navigation = [
     {
       id: "0",
-      title: "Services",
-      url: "#features",
+      title: "Home",
+      url: "#home",
     },
     {
       id: "1",
-      title: "Promotions",
-      url: "#pricing",
+      title: "Services",
+      url: "#features",
     },
     {
       id: "2",
@@ -72,20 +72,8 @@ import {
     },
     {
       id: "3",
-      title: "Contact Us",
-      url: "#roadmap",
-    },
-    {
-      id: "4",
-      title: "New account",
-      url: "#signup",
-      onlyMobile: true,
-    },
-    {
-      id: "5",
-      title: "Sign in",
-      url: "#login",
-      onlyMobile: true,
+      title: "Reviews",
+      url: "#reviews",
     },
   ];
   
@@ -156,7 +144,7 @@ import {
     },
     {
       id: "1",
-      title: "OEM Parts for all of our services",
+      title: "High Quality Parts",
     },
     {
       id: "2",

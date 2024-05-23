@@ -10,7 +10,7 @@ import GreyBanner from '../assets/Grey-Banner-San-Juan.png';
 const Benefits = () => {
   return (
     <div style={{ backgroundImage: `url(${GreyBanner})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
-      <Section id='features' className="relative z-2">
+      <Section crosses id='features' className="relative z-2">
         <div className="container">
           <Heading
             className="md:max-w-md lg:max-w-2xl"

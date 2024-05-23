@@ -1,4 +1,5 @@
 import { background } from "../../assets";
+import { disablePageScroll, enablePageScroll } from 'scroll-lock';
 
 export const Rings = () => {
   return (

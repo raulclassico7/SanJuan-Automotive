@@ -6,15 +6,16 @@ import { reviews } from '../constants';
 import Arrow from '../assets/svg/Arrow';
 import ClipPath from '../assets/svg/ClipPath';
 import GreyBanner from '../assets/Grey-Banner-San-Juan.png';
+import Button from '../components/Button'
 
 const Reviews = () => {
   return (
-    <div style={{ backgroundImage: `url(${GreyBanner})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
-    <Section id='features' className="relative z-2">
+    <div id='reviews' style={{ backgroundImage: `url(${GreyBanner})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
+    <Section  crosses className="relative z-2">
     <div className="container">
       <Heading
         className="md:max-w-md lg:max-w-2xl"
-        title="We value our customers and their reviews"
+        title="We Value our Customers and their Reviews"
       />
       <div className='flex flex-wrap gap-10 mb-10'>
         {reviews.map((item) => (
@@ -67,6 +68,9 @@ const Reviews = () => {
           </div>
         ))}
       </div>
+            <Button href="https://maps.app.goo.gl/A2gjtup5XNwsV575A" white className='mt-10 mb-10 text-lg md:text-[17px]'>
+              Leave A review
+            </Button>
     </div>
   </Section>
   </div>

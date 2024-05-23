@@ -51,7 +51,7 @@ const Collaboration = () => {
                 ))}
               </ul>
 
-              <Button>Contact US</Button>
+              <Button href="tel:15629446353">Contact US</Button>
             </div>
           </div>
         </Section>

@@ -1,4 +1,4 @@
-import { brainwave } from "../assets";
+
 import { navigation } from '../constants';
 import { useLocation } from "react-router-dom";
 import { disablePageScroll, enablePageScroll } from "scroll-lock";
@@ -6,7 +6,6 @@ import Button from './Button';
 import MenuSvg from '../assets/svg/MenuSvg';
 import { HamburgerMenu } from './design/Header';
 import { useState } from 'react';
-// import { faGlobe, faEnvelope, faPhone, faClock } from '@fortawesome/free-solid-svg-icons';
 import { FaTiktok, FaFacebookF, FaInstagram } from 'react-icons/fa';
 
 const Header = () => {
@@ -66,8 +65,8 @@ const Header = () => {
                 </div>
                 <HamburgerMenu />
             </nav>
-            <a href="#requestQuote" className="button hidden mr-8 text-n-1 transition-colors hover:text-n-1/50 lg:block lg:text-[20px]">
-                Get a Quote
+            <a href="tel:15629446353" className="button hidden mr-8 text-n-1 transition-colors hover:text-n-1/50 lg:block lg:text-[20px]">
+                GIVE US A CALL!
             </a>
             <Button className="hidden lg:flex" href="#setAppointment">
                 Set Appointment

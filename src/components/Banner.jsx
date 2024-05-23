@@ -9,7 +9,7 @@ import Badge from '../assets/badge.png';
 
 const Banner = () => {
   return (
-    <div className="relative">
+    <div id='home' className="relative ">
       {/* Video background for large screens */}
       <video
         src={SJVid}
