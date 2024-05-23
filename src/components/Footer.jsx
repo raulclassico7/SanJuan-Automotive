@@ -1,4 +1,4 @@
-import { FaFacebookF, FaTiktok, FaInstagram, FaMapMarkerAlt, FaPhone, FaClock } from 'react-icons/fa';
+import { FaFacebookF, FaTiktok, FaInstagram, FaMapMarkerAlt, FaPhone, FaClock, FaEnvelope } from 'react-icons/fa';
 import SJLogo from '../assets/SJ-logo.png';
 
 const Footer = () => {
@@ -28,6 +28,10 @@ const Footer = () => {
           <div className="flex flex-row justify-start lg:justify-end mb-2">
             <FaPhone className="mr-2" />
             <p className="sm:pl-2">(562) 944 - 6353</p>
+          </div>
+          <div className="flex flex-row justify-start lg:justify-end mb-2">
+            <FaEnvelope className="mr-2" />
+            <p className="sm:pl-2">automotivesanjuan@gmail.com</p>
           </div>
           <div className="flex flex-row justify-start lg:justify-end">
             <FaClock className="mr-2" />
