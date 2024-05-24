@@ -6,23 +6,23 @@ import nodemailer from 'nodemailer';
 import path from 'path';
 import { fileURLToPath } from 'url';
 
+const app = express();
 const corsOptions = {
   origin: '*', // Allow all origins
   methods: 'GET,HEAD,PUT,PATCH,POST,DELETE', // Allow these HTTP methods
-  allowedHeaders: ['Content-Type', 'Authorization'] // Allow these headers
+  allowedHeaders: "Content-Type, Accept, Authorization" // Allow these headers
 };
 
 app.use(cors(corsOptions));
-
 app.use(express.json());
 app.use('/', router);
 
-// // Derive __dirname equivalent
-// const __filename = fileURLToPath(import.meta.url);
-// const __dirname = path.dirname(__filename);
+// Derive __dirname equivalent
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
-// // Serve static files from the dist directory
-// app.use(express.static(path.join(__dirname, 'dist')));
+// Serve static files from the dist directory
+app.use(express.static(path.join(__dirname, 'dist')));
 
 // Handle client-side routing, return all requests to the React app
 app.get('/', (req, res) => {
