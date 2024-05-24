@@ -2,7 +2,10 @@ import ButtonGradient from './assets/svg/ButtonGradient';
 import Header from './components/Header';
 import Banner from './components/Banner';
 import Benefits from './components/Benefits';
-
+import Footer from './components/Footer';
+import Collaboration from './components/Collaboration';
+import SetAppointment from './components/SetAppointment';
+import Reviews from './components/Reviews';
 
 
 const App = () => {
@@ -12,6 +15,10 @@ const App = () => {
        <Header /> 
        <Banner />
        <Benefits />
+       <Collaboration />
+       <SetAppointment />
+       <Reviews />
+       <Footer/>
       </div>
       <ButtonGradient />
     </>

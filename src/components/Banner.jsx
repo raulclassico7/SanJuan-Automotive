@@ -1,71 +1,60 @@
 import Section from './Section';
-import Tech from '../assets/Tech.png'
-import { curve, heroBackground } from '../assets';
 import Button from './Button';
-import BackgroundGrey from '../assets/Grey-Banner-San-Juan.png';
 import { Gradient } from './design/Hero';
+import YellowBg from '../assets/YellowBG.png';
+import SJLogo from '../assets/SJ-logo.png';
+import SJVid from '../assets/SJ-Vid.mp4';
+import Phone from '../assets/telephone.png';
+import Badge from '../assets/badge.png';
 
 const Banner = () => {
   return (
-    <Section
-        className="pt-[12rem] -mt-[5.25rem]"
+    <div id='home' className="relative ">
+      {/* Video background for large screens */}
+      <video
+        src={SJVid}
+        autoPlay
+        loop
+        muted
+        className="absolute inset-0 object-cover w-full h-full z-0 hidden md:block" // Hide on small screens (md and below)
+      />
+      {/* Image background for small screens */}
+      <img
+        src={YellowBg}
+        alt="Yellow background"
+        className="absolute inset-0 object-cover w-full h-full z-0 block md:hidden" // Show on small screens only (md and below)
+      />
+      {/* Content */}
+      <Section
+        className="pt-[2rem] -mt-[5.25rem] relative z-10"
         crosses
         crossesOffset="lg:translate-y-[5.25rem]"
         customPaddings
         id="banner"
-    >   
-        <div className='container relative'>
-            <div className='relative z-1 max-w-[62rem] mx-auto text-center mb-[3.875rem] md:mb-20 lg:mb-[6.25rem]'>
-                <h1 className='h1 mb-6'>
-                    We are the best autoshop
-                    <span className="inline-block relative">
-                    Brainwave{" "}
-                        <img
-                            src={curve}
-                            className="absolute top-full left-0 w-full xl:-mt-2"
-                            width={624}
-                            height={28}
-                            alt="Curve"
-                        />
-                    </span>
-                </h1>
-                <p className="body-1 max-w-3xl mx-auto mb-6 text-n-2 lg:mb-8">
-                    Unleash the power of AI within Brainwave. Upgrade your productivity
-                    with Brainwave, the open AI chat app.
-                </p>
-                <Button href="/pricing" white>
-                    Get started
-                </Button>
+      >   
+        <div className='container mx-4 relative flex flex-col lg:flex-row'>
+          <div className='max-w-[45rem] text-left mb-[3.875rem] md:mb-20 lg:mb-[3rem]'>
+            <img className='mt-15 -ml-5 mb-5' src={SJLogo} height={250} width={450} />
+            <h1 className='h1 mb-6 mt-6 text-n-8'>
+              We are the best Autoshop in Town! 
+            </h1>
+            <p className="body-1 leading-tight font-bold max-w-3xl text-lg md:text-[35px] mx-auto mb-6 text-n-8 lg:mb-12">
+              We are proud to serve Los Angeles, for all your car issues! Give us a call!
+            </p>
+            <div className='flex items-center'>
+                <img className='h-16 w-auto' src={Phone} alt="Phone" />
+                <h3 className='ml-4 text-lg md:text-[50px]'> (562) 944 - 6353</h3>
             </div>
-            <div className='relative max-w-[23rem] mx-auto md:max-w-5xl xl:mb-24'>
-                <div className='relative z-1 p-0.5 rounded-2xl bg-conic-gradient'>
-                    <div className='relative bg-n-6 rounded-[1rem]'>
-                        <div className='relative h-[1.4rem] bg-n-10 rounded-t-[0.9rem]'/>
-                            <div className='aspect-[33/40] rounded-b-[0.9rem] overflow-hidden md:aspect-[688/490] lg:apect-[1024/490]'>
-                                <img
-                                    src={Tech}
-                                    className='w-full scale-[1.05] -translate-y-[15%] md:scale-[1] md:-translate-y-[15%] lg:-translate-y-[23%]'
-                                    width={1024}
-                                    height={1800}
-                                    alt='logo'
-                                />
-                            </div>
-                    </div>
-                    <Gradient />
-                </div>
-                <div className='absolute -top-[54%] left-1/2 w-[234%] -translate-x-1/2 md:-top-[46%] md:w-[138%] lg:-top-[104%]'>
-                    <img
-                        src={heroBackground}
-                        className='w-full'
-                        width={1440}
-                        height={1800}
-                        alt='BackgroundGrey'
-                    />
-                </div>
-            </div>
+            <Button href="#setAppointment" white className='mt-10 mb-10 text-lg md:text-[17px]'>
+              Set your appointment
+            </Button>
+          </div>
         </div>
-    </Section> 
-  )
+      </Section> 
+    </div>
+  );
 }
 
-export default Banner
+export default Banner;
+
+
