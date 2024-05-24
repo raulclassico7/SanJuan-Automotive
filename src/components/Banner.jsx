@@ -5,7 +5,6 @@ import YellowBg from '../assets/YellowBG.png';
 import SJLogo from '../assets/SJ-logo.png';
 import SJVid from '../assets/SJ-Vid.mp4';
 import Phone from '../assets/telephone.png';
-import Badge from '../assets/badge.png';
 
 const Banner = () => {
   return (
