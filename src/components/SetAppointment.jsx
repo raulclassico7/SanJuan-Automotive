@@ -53,7 +53,7 @@ const SetAppointment = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setButtonText('Sending...');
-    let response = await fetch('https://san-juan-automotive-dsiua4pxs-classico.vercel.app/contact', {
+    let response = await fetch('https://sanjuan-automotive.onrender.com/contact', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json;charset=utf-8'
