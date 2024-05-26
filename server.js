@@ -25,8 +25,8 @@ const __dirname = path.dirname(__filename);
 app.use(express.static(path.join(__dirname, 'dist')));
 
 // Handle client-side routing, return all requests to the React app
-app.get('/', (req, res) => {
-  res.send('hello');
+app.get('*', (req, res) => {
+  res.sendFile(path.resolve(__dirname, 'dist', 'index.html'));
 });
 
 app.listen(8000, () => console.log('Listening on port 8000'));
