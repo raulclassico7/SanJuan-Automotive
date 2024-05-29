@@ -34,9 +34,9 @@ app.listen(8000, () => console.log('Listening on port 8000'));
 const contactEmail = nodemailer.createTransport({
   service: 'gmail',
   auth: {
-    user: 'raulclassico7@gmail.com',
+    user: 'automotivesanjuan@gmail.com',
     // pass: "" create a application password in order to access this feature "fdmu yajb oduo xsyx"
-    pass: 'fdmuyajboduoxsyx'
+    pass: 'keabhurlttjbwvvh'
   }
 });
 
@@ -60,7 +60,7 @@ router.post('/contact', (req, res) => {
   const time = req.body.time;
   const mail = {
     from: fullName,
-    to: 'raulclassico7@gmail.com',
+    to: 'automotivesanjuan@gmail.com',
     subject: 'New Customer Appointment Scheduled - San Juan Automotive',
     html: `<p>Name of Customer: ${fullName}</p>
                 <p>Email: ${email}</p>
