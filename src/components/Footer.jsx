@@ -35,7 +35,7 @@ const Footer = () => {
           </div>
           <div className="flex flex-row justify-start lg:justify-end">
             <FaClock className="mr-2" />
-            <p className="sm:pl-2">Mon - Fri: 8am - 6pm | Sat 8am - 5pm</p>
+            <p className="sm:pl-2">Mon - Fri: 8am - 6pm | Sat 8am - 4pm</p>
           </div>
         </div>
       </div>

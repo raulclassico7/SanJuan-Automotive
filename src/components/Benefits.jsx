@@ -14,7 +14,7 @@ const Benefits = () => {
         <div className="container">
           <Heading
             className="md:max-w-md lg:max-w-2xl"
-            title="Most Popular Services that we Provide"
+            title="Popular Services"
           />
           <div className='flex flex-wrap gap-10 mb-10'>
             {benefits.map((item) => (
