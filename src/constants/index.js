@@ -45,11 +45,13 @@ import {
   import Engine from '../assets/benefits/engine.png';
   import Transmision from '../assets/benefits/transmision.png';
   import Gauge from '../assets/benefits/gauge.png';
+  import Tire from '../assets/benefits/tire.png';
 
   import Review1 from '../assets/benefits/SJ-reviewIcon2.png';
   import Review2 from '../assets/benefits/SJ-reviewIcon3.png';
   import Review3 from '../assets/benefits/SJ-reviewIcon4.png';
   import Rating from '../assets/benefits/rating.png';
+ 
   
 
 
@@ -250,8 +252,8 @@ import {
   export const benefits = [
     {
       id: "0",
-      title: "Break Service",
-      text: "Lets users quickly find answers to their questions without having to search through multiple sources.",
+      title: "Brake Service",
+      text: "Brakes making noise? Stop by for a FREE brake inspection.",
       backgroundUrl: "./src/assets/benefits/card-1.svg",
       iconUrl: Brake,
       imageUrl: benefitImage2,
@@ -259,7 +261,7 @@ import {
     {
       id: "1",
       title: "A/C Service",
-      text: "The app uses natural language processing to understand user queries and provide accurate and relevant responses.",
+      text: "A/C not working like it used to? Stop by for a complete A/C service or diagnosis.",
       backgroundUrl: "./src/assets/benefits/card-2.svg",
       iconUrl: AC,
       imageUrl: benefitImage2,
@@ -268,7 +270,7 @@ import {
     {
       id: "2",
       title: "Oil Change",
-      text: "Connect with the AI chatbot from anywhere, on any device, making it more accessible and convenient.",
+      text: "Every oil change comes with a COMPLIMENTARY multi point inspection, tire pressure check and adjustment, plus a fluid top off.",
       backgroundUrl: "./src/assets/benefits/card-3.svg",
       iconUrl: Oil,
       imageUrl: benefitImage2,
@@ -276,7 +278,7 @@ import {
     {
       id: "3",
       title: "Catalytic & Muffler",
-      text: "Lets users quickly find answers to their questions without having to search through multiple sources.",
+      text: "Best prices in town for catalytic converter and muffler work.",
       backgroundUrl: "./src/assets/benefits/card-4.svg",
       iconUrl: Engine,
       imageUrl: benefitImage2,
@@ -285,7 +287,7 @@ import {
     {
       id: "4",
       title: "Check Engine Light",
-      text: "Lets users quickly find answers to their questions without having to search through multiple sources.",
+      text: "Stop by for a check engine light diagnosis and repair using our state of the art diagnostic tools. ",
       backgroundUrl: "./src/assets/benefits/card-5.svg",
       iconUrl: CEngine,
       imageUrl: benefitImage2,
@@ -293,7 +295,7 @@ import {
     {
       id: "5",
       title: "Trasmission & Engine Rebuild",
-      text: "The app uses natural language processing to understand user queries and provide.",
+      text: "Complete engine and transmission overhaul.",
       backgroundUrl: "./src/assets/benefits/card-6.svg",
       iconUrl: Transmision,
       imageUrl: benefitImage2,
@@ -301,15 +303,15 @@ import {
     {
       id: "6",
       title: "Complete Tune-Up",
-      text: "The app uses natural language processing to understand user queries and provide accurate and relevant responses.",
+      text: "Ask us about full service maintenance. From spark plug replacement to transmission service, we got you covered!",
       backgroundUrl: "./src/assets/benefits/card-6.svg",
       iconUrl: Tune,
       imageUrl: benefitImage2,
     },
     {
       id: "7",
-      title: "Shock Suspension Strut",
-      text: "The app uses natural language processing to understand user queries and provide accurate and relevant responses.",
+      title: "Suspension",
+      text: "Car not riding as smoothly as it used to? Stop by and get your suspension feeling brand new again.",
       backgroundUrl: "./src/assets/benefits/card-6.svg",
       iconUrl: Suspension,
       imageUrl: benefitImage2,
@@ -317,9 +319,17 @@ import {
     {
       id: "8",
       title: "Aligment Service",
-      text: "The app uses natural language processing to understand user queries and provide accurate and relevant responses.",
+      text: "4 wheel alignment, performing a 4 wheel alignment once a year is a great way to make your tires last longer.",
       backgroundUrl: "./src/assets/benefits/card-6.svg",
       iconUrl: Gauge,
+      imageUrl: benefitImage2,
+    },
+    {
+      id: "9",
+      title: "Tires Service",
+      text: "Most brands and sizes in stock. Give us a call before your visit to verify we got the one you need.",
+      backgroundUrl: "./src/assets/benefits/card-6.svg",
+      iconUrl: Tire,
       imageUrl: benefitImage2,
     },
   ];

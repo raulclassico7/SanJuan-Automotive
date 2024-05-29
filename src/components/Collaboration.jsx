@@ -31,14 +31,13 @@ const Collaboration = () => {
         <Section crosses id='how-to-use'>
           <div className="container lg:flex">
             <div className="max-w-[35rem]" style={{ position: 'relative', zIndex: 1 }}> {/* Set higher zIndex to this div */}
-              <h2 className="h2 mb-4 md:mb-8">
+              <h2 className="h2 mb-4 md:mb-10">
                 Welcome to San Juan Automotive
               </h2>
-              <p className="text-[18px] mb-5">
-                Welcome to San Juan Automotive, we are located in the City of Whittier but service all of Los Angeles. We are unique in our service because we
-                are passionate about what we do and all of our services have a one year warranty to make sure to secure you and leave you completely satisfied.
-                Bring your new vehicle purchased from the dealer and we will conduct a bumper to bumper full check up, we want to make sure you make the best purchase.
-                Don't be afraid to contact us for a quote, an appointment, or any questions.
+              <p className="text-[18px] mb-10">
+              Serving the community since 1949, San Juan Automotive has been a reliable source for people to get their needed auto repairs. 
+              We strive to perform the highest quality repairs for the right pricing. 
+
               </p>
               <ul className="max-w-[22rem] mb-10 md:mb-14">
                 {collabContent.map((item) => (

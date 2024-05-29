@@ -15,7 +15,7 @@ const Reviews = () => {
     <div className="container">
       <Heading
         className="md:max-w-md lg:max-w-2xl"
-        title="We Value our Customers and their Reviews"
+        title="Satisfied Customers"
       />
       <div className='flex flex-wrap gap-10 mb-10'>
         {reviews.map((item) => (
