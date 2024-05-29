@@ -318,7 +318,7 @@ import {
     },
     {
       id: "8",
-      title: "Aligment Service",
+      title: "Alignment Service",
       text: "4 wheel alignment, performing a 4 wheel alignment once a year is a great way to make your tires last longer.",
       backgroundUrl: "./src/assets/benefits/card-6.svg",
       iconUrl: Gauge,
