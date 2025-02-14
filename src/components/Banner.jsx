@@ -1,6 +1,5 @@
 import Section from './Section';
 import Button from './Button';
-import { Gradient } from './design/Hero';
 import YellowBg from '../assets/YellowBG.png';
 import SJLogo from '../assets/SJ-logo.png';
 import SJVid from '../assets/SJ-Vid.mp4';
@@ -10,7 +9,7 @@ import { FaMapMarkerAlt } from 'react-icons/fa';
 
 const Banner = () => {
   return (
-    <div id='home' className="relative ">
+    <div id='home' className="relative">
       {/* Video background for large screens */}
       <video
         src={SJVid}

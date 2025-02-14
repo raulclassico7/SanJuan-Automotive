@@ -6,7 +6,7 @@ import Footer from './components/Footer';
 import Collaboration from './components/Collaboration';
 import SetAppointment from './components/SetAppointment';
 import Reviews from './components/Reviews';
-
+import Specials from './components/Specials';
 
 const App = () => {
   return (
@@ -14,6 +14,7 @@ const App = () => {
       <div className="pt-[4.75rem] lg:pt-[5.25rem] overflow-hidden">
        <Header /> 
        <Banner />
+       <Specials/>
        <Benefits />
        <Collaboration />
        <SetAppointment />
