@@ -7,15 +7,15 @@ import OilSpecial from '../assets/Oil-ChangeSpecialBanner2.png';
 import TireS from '../assets/TireSpecialBanner2.png';
 
 const specials = [
-    { title: "Full Synthetic Oil-Change!", description: "Most Cars qualify, *UP-TO 5 QUARTERS", img: OilSpecial },
-    { title: "New Tires Special Sale!", description: "Get a free car wash with any service above $50!", img: TireS }  
+    { title: "Full Synthetic Oil-Change!", description: "We have the best price for Full Synthetic Oil Change ", img: OilSpecial },
+    { title: "New Tires Special Sale!", description: " Quality is only what we sale. FREE Alignment and Installation!", img: TireS }  
 ];
 
 const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
 
 
-export default function SpecialsCarousel(props) {
+export default function SpecialsCarousel() {
     const [activeStep, setActiveStep] = useState(0);
     const maxSteps = specials.length;
 
@@ -40,7 +40,6 @@ export default function SpecialsCarousel(props) {
                 width: "100%", 
                 height: "100%", 
             }} 
-            className={props.className}
         >
             {/* Left Button (Back) */}
             <IconButton 

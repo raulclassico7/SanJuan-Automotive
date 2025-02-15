@@ -19,14 +19,14 @@ export default function Specials() {
                 crosses
                 id="specials"
             >   
-            <div className='container text-center flex flex-col lg:flex-col border-2 border-red-500'>
-                <div className='max-w-auto mb-[3.875rem] text-center md:mb-20 lg:mb-[3rem] border-2 border-red-500'>
-                    <h1 className='h1 mb-6 mt-6 text-w-8 border-2 border-red-500'>
+            <div className='container text-center flex flex-col lg:flex-col'>
+                <div className='max-w-auto mb-[3.875rem] text-center md:mb-20 lg:mb-[3rem]'>
+                    <h1 className='h1 mb-6 mt-6 text-w-8'>
                         Specials of The Month
                     </h1>
                 </div>
             </div>
-            <SpecialsCorousel  className="border-2 border-red-500"/>
+            <SpecialsCorousel />
             </Section>
         </div>
     )
