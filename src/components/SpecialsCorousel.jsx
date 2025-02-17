@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import SwipeableViews from "react-swipeable-views";
 import { autoPlay } from "react-swipeable-views-utils";
 import { Box, Typography, Paper, IconButton } from "@mui/material";

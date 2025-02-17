@@ -1,4 +1,3 @@
-import React from 'react';
 import Section from '../components/Section';
 import SpecialsCorousel from './SpecialsCorousel';
 import SportBg from '../assets/SportBg-Specials.png'
