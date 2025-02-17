@@ -1,13 +1,15 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
+import React from "react";
+import ReactDOM from "react-dom";
 import App from './App.jsx'
-import './index.css'
 import { BrowserRouter as Router } from 'react-router-dom';
+import './index.css'
 
-ReactDOM.createRoot(document.getElementById('root')).render(
+// eslint-disable-next-line react/no-deprecated
+ReactDOM.render(
   <React.StrictMode>
     <Router>
       <App />
     </Router>
   </React.StrictMode>,
-)
+  document.getElementById("root")
+);
