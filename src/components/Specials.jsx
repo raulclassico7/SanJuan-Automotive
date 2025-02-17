@@ -14,7 +14,7 @@ export default function Specials() {
           }}
         >
             <Section
-                className="pt-[2rem] relative z-10 xl:py-10"
+                className="pt-[2rem] relative z-10 lg:py-6 xl:py-6"
                 crosses
                 id="specials"
             >   
