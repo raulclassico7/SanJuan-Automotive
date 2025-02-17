@@ -5,19 +5,24 @@ import SJLogo from '../assets/SJ-logo.png';
 import SJVid from '../assets/SJ-Vid.mp4';
 import Phone from '../assets/telephone.png';
 import { FaMapMarkerAlt } from 'react-icons/fa';
+import { useMediaQuery } from "@mui/material"; 
 
 
 const Banner = () => {
+
+  const isMobile = useMediaQuery("(max-width: 768px)");
+
   return (
     <div id='home' className="relative">
-      {/* Video background for large screens */}
-      <video
-        src={SJVid}
-        autoPlay
-        loop
-        muted
-        className="absolute inset-0 object-cover w-full h-full z-0 hidden md:block" // Hide on small screens (md and below)
-      />
+      {!isMobile && (
+        <video
+          src={SJVid}
+          autoPlay
+          loop
+          muted
+          className="absolute inset-0 object-cover w-full h-full z-0"
+        />
+      )}
       {/* Image background for small screens */}
       <img
         src={YellowBg}

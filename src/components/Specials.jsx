@@ -15,13 +15,18 @@ export default function Specials() {
           }}
         >
             <Section
-                className="pt-[2rem] relative z-10 border-2 xl:py-10 border-red-500"
+                className="pt-[2rem] relative z-10 xl:py-15"
                 crosses
                 id="specials"
             >   
             <div className='container text-center flex flex-col lg:flex-col'>
-                <div className='max-w-auto mb-[3.875rem] text-center md:mb-20 lg:mb-[3rem]'>
-                    <h1 className='h1 mb-6 mt-6 text-w-8'>
+                <div className='max-w-auto mb-[1rem] text-center md:mb-20 lg:mb-[1rem]'>
+                    <h1 
+                        className='h1 mt-6 text-w-8'
+                        style={{ 
+                            textShadow: '2px 4px 10px rgba(255, 255, 255, 0.7)' 
+                        }}
+                    >
                         Specials of The Month
                     </h1>
                 </div>
