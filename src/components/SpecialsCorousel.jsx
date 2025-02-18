@@ -8,7 +8,7 @@ import OilSpecial from '../assets/Oil-ChangeSpecialBanner2.png';
 import TireS from '../assets/TireSpecialBanner2.png';
 
 const specials = [
-    { title: "Full Synthetic Oil-Change!", description: "We have the best price for Full Synthetic Oil Change ", img: OilSpecial },
+    { title: "Full Synthetic Oil Change!", description: "We have the best price for Full Synthetic Oil Change ", img: OilSpecial },
     { title: "New Tires Special Sale!", description: " Quality is only what we sale. FREE Alignment and Installation!", img: TireS }  
 ];
 
